@@ -1,0 +1,18 @@
+{% extends "glowna.html" %}
+{% block title %}Moja pierwsza strona{% endblock %}
+{% block content %}    
+    <h2>Kontakt</h2>
+    <h3>email: kusmichal.ku@gmail.com</h3>
+    <h4>telefon: +48512109618</h4>
+    <h5>Wyślij Wiadomość</h5>
+    <form action="" method="POST" class="form-exaple">
+        <div><div class="form-exaple">
+         <input type="text">
+         <input type="submit" value="Wyślij" 
+         </div>
+    </form>
+    <ul>{% for messege in messeges %}
+            <li>{{ messege }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
